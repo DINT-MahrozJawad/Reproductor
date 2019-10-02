@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
 
     <DockPanel>
-        <DockPanel DockPanel.Dock="Right" Margin="5,5,5,5">
+        <DockPanel LastChildFill="False" DockPanel.Dock="Right" Margin="5,5,5,5">
             <Button Margin="4,4,4,4" DockPanel.Dock="Top" Width="100" Click="Button_Play">Play</Button>
             <Button Margin="4,4,4,4" DockPanel.Dock="Top" Width="100" Click="Button_Pause">Pause</Button>
             <Button Margin="4,4,4,4" DockPanel.Dock="Top" Width="100" Click="Button_Stop">Stop</Button>
@@ -16,7 +16,6 @@
             <RadioButton x:Name="Trailer2" Checked="Checked_Trailers" DockPanel.Dock="Bottom" Width="100">Trailer 2</RadioButton>
             <RadioButton x:Name="Trailer1" Checked="Checked_Trailers" DockPanel.Dock="Bottom" Width="100">Trailer 1</RadioButton>
             
-            <TextBlock></TextBlock>
         </DockPanel>
         <DockPanel Margin="5,5,5,5" DockPanel.Dock="Bottom">
             <CheckBox Checked="CheckBox_Checked" DockPanel.Dock="Left">Silenciar</CheckBox>
