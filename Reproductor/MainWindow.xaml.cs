@@ -43,23 +43,13 @@ namespace Reproductor
         private void Checked_Trailers(object sender, RoutedEventArgs e)
         {
             Trailes.Play();
-            if (((RadioButton)sender).Name == "Trailer1")
-            {
-                Trailes.Source = new Uri("C:/Users/alumno/source/repos/Reproductor/Reproductor/Trailers/trailer1.mp4");
-            }
-            else if (((RadioButton)sender).Name == "Trailer1")
-            {
-                Trailes.Source = new Uri("C:/Users/alumno/source/repos/Reproductor/Reproductor/Trailers/trailer2.mp4");
-            }
+            Trailes.Source = new Uri("C:/Users/alumno/source/repos/Reproductor/Reproductor/Trailers/" + ((RadioButton)sender).Name + ".mp4");
 
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            if(((CheckBox)sender).IsChecked == true)
-                Trailes.IsMuted = true;
-            else
-                Trailes.IsMuted = false;
+             Trailes.IsMuted = ((CheckBox)sender).IsChecked.Value;
         }
     }
 }
